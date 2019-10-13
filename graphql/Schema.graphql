@@ -1,0 +1,1 @@
+# import Query.*, Mutation.*, Subscription.* from 'Chat.graphql'

@@ -1,0 +1,23 @@
+{
+  "name": "graphql-subscription",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rico Sandyca Novenza",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/main.js",
+    "dev:ts": "tsc --watch",
+    "dev:node": "nodemon -q dist/main.js",
+    "dev": "concurrently \"yarn dev:ts\" \"yarn dev:node\"",
+    "build": "rm -rf dist && tsc"
+  },
+  "dependencies": {
+    "@types/mongoose": "^5.5.20",
+    "apollo-server-express": "^2.9.6",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-import": "^0.7.1",
+    "mongoose": "^5.7.4"
+  }
+}
